@@ -1,0 +1,188 @@
+/* .itemName {
+    text-align: left;
+}
+.itemCost {
+    color: rgb(33, 141, 0);
+    text-align: right;
+}
+.itemRow {
+    width: 100%;
+}
+
+.allorders {
+    color: black;
+}
+*/
+.droppable {
+    background-color: #F6F6F6;
+    height: 100px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 6px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.295);
+}
+.droppable:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541);
+}
+/*
+
+.leftBlock{
+    background-color: #00008b;
+    
+}
+*/
+.cView {
+    background-color: rgba(115, 224, 170, 0.308);
+    transition: 0.3s;
+}
+
+.deckHead{
+    background-color: rgb(43, 170, 103);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.253);
+}
+
+.topPageTable{
+    width: 100%;
+    text-align: center;
+    color: #ffff;
+}
+
+.headText{
+    height: 45px;
+    font-weight: bold;
+}
+/*
+.leftBot{
+    height: 100vh;
+}
+*/
+.firstField{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+} 
+
+.mainPage{
+    background-color: #f2f2f2;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.rightButtons{
+    justify-content: flex-end;
+}
+.botLeftCon{
+    height: 84vh;
+}
+.botLeftFunc{
+    background-color: #00008b;
+    width: 400px;
+}
+.totalBar {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #55AD39;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.315);
+}
+.groupName {
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #00008b;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.644);
+        
+}
+
+.draggable{
+    background-color: rgba(129, 167, 118, 0.247);
+    transition: 0.3s;
+    margin: 5px;
+}
+.draggable:hover{
+    transition: 0.3s;
+    background-color: rgba(108, 207, 81, 0.397);
+}
+.draggable:active{
+    transition: 0.3s;
+    background-color: rgba(55, 255, 0, 0.404);
+}
+.allTables {
+    display: flex;
+    flex-wrap: wrap;
+}
+.finalize{
+    margin-right: 10px;
+    background-color: rgb(74, 167, 184);
+    border-color: rgb(74, 167, 184);
+}
+.finalize:hover{
+    margin-right: 10px;
+    background-color: rgb(49, 136, 151);
+    border-color: rgb(49, 136, 151);
+}
+.finalize:active{
+    margin-right: 10px;
+    background-color: rgb(34, 102, 114);
+    border-color: rgb(34, 102, 114);
+}
+
+.final{
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid rgb(24, 141, 106);
+    border-bottom: 4px solid rgba(0,0,0,0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    margin: auto;
+    color: white;
+    background: rgb(24, 141, 106);
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.final:hover{
+    background: rgb(72, 219, 141);
+    color: black;
+    transition: 0.3s;
+}
+.final:active {
+    box-shadow: 0 0 #1d4100; 
+    background-color: rgb(55, 155, 102);
+}
+.finalno{
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid rgb(145, 20, 20);
+    border-bottom: 4px solid rgba(0,0,0,0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    margin: auto;
+    color: white;
+    background: rgb(145, 20, 20);
+    margin-bottom: 5px;
+}
+.finalno:hover{
+    background: rgb(218, 29, 29);
+    color: black;
+    transition: 0.3s;
+}
+.finalno:active {
+    box-shadow: 0 0 #1d4100; 
+    background-color: rgb(55, 155, 102);
+}

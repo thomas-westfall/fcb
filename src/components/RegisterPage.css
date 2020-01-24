@@ -1,0 +1,113 @@
+.registerPage{
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.inputFieldR{
+    text-align: left;
+    width: 60%;
+}
+.errorMessage{
+    color: #D63030;
+    text-align: center;
+}
+.successMessage{
+    color: rgba(19, 16, 233, 0.473);
+    text-align: center;
+}
+.registerTable{
+    align-content: center;
+    background-color: #ffffff;
+    width: 390px;
+    border-radius: 15px;
+    height: 440px;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+    text-align: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.registerTable:hover{
+    transition: 0.5s;
+    box-shadow: 0 5px 8px 0 rgba(19, 16, 233, 0.473);
+    width: 400px;
+    height: 450px;
+}
+.registerTitle{
+    padding-top: 10px;
+    color: #00008b;
+    text-align: center;
+}
+.registerInput{
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+.TextField{
+    text-align: right;
+}
+.registerButton{
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 60px;
+    border: 1px solid #00008b;
+    border-bottom: 4px solid rgba(0,0,0,0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    margin: auto;
+    color: white;
+    background: #00008b;
+}
+.registerButton:hover{
+    background: rgba(19, 16, 233, 0.473);
+    transition: 0.3s;
+}
+.registerButton:active {
+    box-shadow: 0 0 #1d4100; 
+    background-color: rgba(19, 16, 233, 0.473);
+}
+.showPassword{
+    font-size: 12px;
+}
+.showPassCheck{
+    margin-right: 5px;
+}
+.cancelButton{
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 60px;
+    border: 1px solid rgb(238, 63, 63);
+    border-bottom: 4px solid rgba(0,0,0,0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    margin: auto;
+    color: white;
+    background: rgb(238, 63, 63);
+}
+.cancelButton:hover{
+    color:white;
+    text-decoration: none;
+    background: rgb(197, 54, 54);
+    transition: 0.3s;
+}
+.cancelButton:active {
+    text-decoration: none;
+    box-shadow: 0 0 #1d4100; 
+    background-color: rgb(161, 48, 48)
+}

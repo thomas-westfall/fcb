@@ -1,0 +1,61 @@
+.DeniedPage{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.DeniedDisplay{
+    color: black;
+    text-align: center;
+}
+.DeniedTable{
+    align-content: center;
+    background-color: #ffff;
+    width: 400px;
+    border-radius: 15px;
+    height: 250px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(214, 48, 48, 0.486);
+    text-align: center;
+}
+
+.DeniedTable:hover{
+    box-shadow: 0 5px 8px 0 rgba(214, 48, 48, 0.767);
+}
+.DeniedTitle{
+    padding-top: 10px;
+    color: #D63030;
+    text-align: center;
+}
+
+
+.DeniedLink{
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border: 1px solid rgb(238, 63, 63);;
+    border-bottom: 4px solid rgba(0,0,0,0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    color: white;
+    background: rgb(238, 63, 63);
+    width: 10%;
+}
+.DeniedLink:hover{
+    color:white;
+    text-decoration: none;
+    background: rgb(197, 54, 54);
+    transition: 0.3s;
+}
+.DeniedLink:active {
+    text-decoration: none;
+    box-shadow: 0 0 #1d4100; 
+    background-color: rgb(161, 48, 48)
+}

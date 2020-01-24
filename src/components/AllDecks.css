@@ -1,0 +1,92 @@
+.DeckTable{
+    width: 100%;
+    height: 150px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.DeckTable tbody{
+  background-color: white;
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 157px;
+}
+
+.DeckTable thead tr {
+    
+   display: block;
+   height: 35px;
+   justify-content: center;
+}
+.DeckTable thead tr td{
+    text-align: center;
+ }
+
+.DeckTable thead {
+    border-radius: 50px;
+  background: rgba(88, 88, 88, 0.603);
+  color:#fff;
+  /* outline: thin solid;
+  outline-color: rgba(121, 121, 121, 0.158); */
+}
+.cView {
+    background-color: rgba(19, 16, 233, 0.473);
+    transition: 0.3s;
+}
+.cView:hover {
+    background-color: rgba(19, 16, 233, 0.473);
+    transition: 0.3s;
+}
+.bView, .bView:hover, .bView:active{
+    background-color: rgba(0, 0, 0, 0);
+    color: gray;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: .250rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    font: 400 13.3333px Arial;
+    transition: 0.3s;
+}
+.cDel {
+    background-color: rgba(235, 104, 104, 0.336);
+    transition: 0.3s;
+}
+.cDel:hover {
+    background-color: rgba(192, 52, 52, 0.747);
+    transition: 0.3s;
+}
+.bDel, .bDel:hover, .bDel:active{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: .250rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    font: 400 13.3333px Arial;
+    transition: 0.3s;
+}
+
+
+.DeckTable th, .DeckTable td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+.DeckTable tbody tr td {
+    text-align: center;
+}
+.DeckTable tbody tr {
+    outline: thin solid;
+    outline-color: rgba(121, 121, 121, 0.158);
+}
