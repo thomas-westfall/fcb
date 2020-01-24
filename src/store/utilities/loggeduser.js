@@ -28,7 +28,7 @@ export const logInThunk = (user) => async (dispatch) => {
     let res;
     try {
         console.log(user);
-         res = await axios.post(`http://localhost:5000/auth/login`, {
+         res = await axios.post(`https://fcbe123.herokuapp.com/auth/login`, {
             "username": user.username,
             "password": user.password
         })
@@ -48,7 +48,7 @@ export const logInThunk = (user) => async (dispatch) => {
 
 export const logOutThunk = () => async (dispatch) => {
     try {
-        await axios.delete('http://localhost:5000/auth/logout');
+        await axios.delete('https://fcbe123.herokuapp.com/auth/logout');
         dispatch(logOut());
     }
     catch (err) {

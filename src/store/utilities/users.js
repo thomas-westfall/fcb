@@ -20,7 +20,7 @@ const registerUser = (user) => {
 
 // Thunks go here!
 export const registerUserThunk = (user) => async (dispatch) => {
-    await axios.post(` http://localhost:5000/auth/signup`, {
+    await axios.post(` https://fcbe123.herokuapp.com/auth/signup`, {
         username : user.username,
         email : user.email,
         firstName: user.firstName,
