@@ -21,7 +21,7 @@ const resetDeckData = () => {
 // Thunks go here!
 export const fetchDeckDataThunk = (deckid) => (dispatch) => {
 
-    axios.get("https://fcbe123.herokuapp.com/api/decks/d/" + deckid,{
+    axios.get("https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks/d/" + deckid,{
     })
   .then(res => { // then print response status
     dispatch(fetchDeckData(res.data));

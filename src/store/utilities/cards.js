@@ -23,7 +23,7 @@ const resetCardsData = () => {
 // }
 export const fetchCardsDataThunk = (deckid) => (dispatch) => {
 
-    axios.get("https://fcbe123.herokuapp.com/api/cards/d/" + deckid,{
+    axios.get("https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/cards/d/" + deckid,{
     })
   .then(res => { // then print response status
     dispatch(fetchCardsData(res.data));
