@@ -10,6 +10,9 @@ class LoginPage extends Component {
       username: '',
     }
   }
+  componentDidMount(){
+    console.log("nice!", process.env.TRANSLATE)
+  }
   handleChangePassword = (event) => {
     this.setState({ password: event.target.value })
   }

@@ -37,7 +37,8 @@ componentDidMount(){
   handleSubmit(event) {
     let newdeck = 0;
     event.preventDefault();
-    axios.post(`https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks`, {
+    // axios.post(`https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks`, {
+      axios.post(`http://localhost:5000/api/decks`, {
       userId: 1,
       deckName: this.state.name,
       deckSize: this.state.translated.length,
@@ -49,8 +50,10 @@ componentDidMount(){
         let promises = [];
         let tempt = []
         for (let i = 0; i < this.state.translated.length; i++) {
-          promises.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/cards/pinyin',{q:this.state.simplified[i]}))
-        }
+        //   promises.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/cards/pinyin',{q:this.state.simplified[i]}))
+        // }
+        promises.push(axios.post('http://localhost:5000/api/cards/pinyin',{q:this.state.simplified[i]}))
+      }
         Promise.all(promises)
           .then(responses => {
             console.log(responses)
@@ -72,7 +75,8 @@ componentDidMount(){
   makeCards(newdeckid, deckpinyin){
     let promises = [];
     for (let i = 0; i < this.state.simplified.length; i++) {
-      promises.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/cards',{
+      // promises.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/cards',{
+        promises.push(axios.post('http://localhost:5000/api/cards',{
         cardEnglish:this.state.translated[i],
         cardPinyin:deckpinyin[i],
         cardSimplified:this.state.simplified[i],
@@ -112,9 +116,11 @@ componentDidMount(){
     let promises = [];
     let promisesb = [];
 for (let i = 0; i < temp.length; i++) {
-  // promises.push(axios.post('https://fcbe123.herokuapp.com/api/decks/translate',{q:temp[i]}))
-  promises.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks/translate',{q:temp[i]}))
-  promisesb.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks/translatetrad',{q:temp[i]}))
+  // promises.push(axios.post('https://fcbe123.herokuapp.com/api/decks/translate',{q:temp[i], key:process.env.TRANSLATE}))
+  promises.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks/translate',{q:temp[i], key:process.env.TRANSLATE}))
+  promisesb.push(axios.post('https://cors-anywhere.herokuapp.com/https://fcbe123.herokuapp.com/api/decks/translatetrad',{q:temp[i], key:process.env.TRANSLATE}))
+  //  promises.push(axios.post('http://localhost:5000/api/decks/translate',{q:temp[i],key:process.env.TRANSLATE}))
+  //  promisesb.push(axios.post('http://localhost:5000/api/decks/translatetrad',{q:temp[i], key:process.env.TRANSLATE}))
 }
 Promise.all(promises)
   .then(responses => {
